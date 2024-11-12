@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Login Form</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-button" id="login-button">
+        <span class="material-icons">login</span>
+    </div>
+
+    <div class="modal" id="login-container">
+        <h1>Welcome Back</h1>
+        <form id="login-form">
+            <div class="input-group">
+                <span class="material-icons">person</span>
+                <input type="text" name="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <span class="material-icons">lock</span>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div class="error-message" id="error-message">Invalid username or password</div>
+            <button type="submit" class="btn">Log In</button>
+        </form>
+    </div>
+
+    <div id="calculator">
+        <div class="display">0</div>
+        <div class="calculator-grid">
+            <button class="calculator-button clear">C</button>
+            <button class="calculator-button operator">±</button>
+            <button class="calculator-button operator">%</button>
+            <button class="calculator-button operator">÷</button>
+            
+            <button class="calculator-button">7</button>
+            <button class="calculator-button">8</button>
+            <button class="calculator-button">9</button>
+            <button class="calculator-button operator">×</button>
+            
+            <button class="calculator-button">4</button>
+            <button class="calculator-button">5</button>
+            <button class="calculator-button">6</button>
+            <button class="calculator-button operator">-</button>
+            
+            <button class="calculator-button">1</button>
+            <button class="calculator-button">2</button>
+            <button class="calculator-button">3</button>
+            <button class="calculator-button operator">+</button>
+            
+            <button class="calculator-button">0</button>
+            <button class="calculator-button">.</button>
+            <button class="calculator-button equals">=</button>
+        </div>
+    </div>
+
+    <div class="success-checkmark">
+        <span class="material-icons">check</span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
